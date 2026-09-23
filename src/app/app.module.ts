@@ -8,20 +8,31 @@ import { RecipesComponent } from './components/recipes/recipes.component';
 import { DepositComponent } from './components/deposit/deposit.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
-
+import { HeaderComponent } from './components/header/header.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HelloComponent } from './components/hello/hello.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipesComponent,
-    DepositComponent
+    DepositComponent,
+    HeaderComponent,
+    NotFoundComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
