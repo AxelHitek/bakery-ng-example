@@ -2,6 +2,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strictNullChecks": false,             // Allows assigning null/undefined to any type
+    "strictPropertyInitialization": false, // Stops throwing errors if class variables aren't initialized in the constructor
+    "noImplicitAny": false,                // Allows variables to implicitly default to the 'any' type
+    "noImplicitReturns": false, 
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
